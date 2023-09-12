@@ -1,0 +1,25 @@
+p {
+    color: red;
+}
+
+#madrasa {
+   border: 1px solid grey ;
+   border-radius: 9px;
+   border-width: 0px 1px 2px 1px;
+   background-color: rgb(237, 246, 255)
+}
+#madrasaLogo2 {
+    width: 50px;
+}
+.madrasaNav {
+    margin-left: 5px;
+}
+
+
+/* #madrasaNavHover li:hover {
+    background-color: red;
+} */
+#madrasaNavHover .dropdown-item:hover {
+    background-color: #f5f4f4; /* Change the background color to your desired hover effect */
+    color: #ffd102; /* Change the text color on hover */
+  }
