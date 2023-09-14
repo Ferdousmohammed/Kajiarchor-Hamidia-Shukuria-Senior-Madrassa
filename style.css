@@ -1,25 +1,253 @@
-p {
-    color: red;
+html {
+    scroll-behavior: smooth;
+  }
+
+  /* @keyframes move{
+    50%{
+        translate: 0px 15px;
+    }
+    100%{
+        translate: 0px 0px;
+    }
 }
 
+@keyframes contactmove {
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
 #madrasa {
-   border: 1px solid grey ;
-   border-radius: 9px;
+   border: 1px solid rgb(254, 250, 250) ;
+   border-radius: 12px;
    border-width: 0px 1px 2px 1px;
-   background-color: rgb(237, 246, 255)
+   /* background-color: rgb(241, 246, 251) */
 }
 #madrasaLogo2 {
-    width: 50px;
+    width: 45px;
 }
 .madrasaNav {
     margin-left: 5px;
 }
 
 
-/* #madrasaNavHover li:hover {
-    background-color: red;
-} */
 #madrasaNavHover .dropdown-item:hover {
-    background-color: #f5f4f4; /* Change the background color to your desired hover effect */
-    color: #ffd102; /* Change the text color on hover */
+    background-color: #9b8d8d; 
+    color: #ffd102; 
   }
+
+  #madrasaCarosoleWidth img {
+        width: 100%;
+        max-height: auto; 
+  } 
+
+#madrasaNavItem {
+    color: rgb(99, 4, 85);
+    font-size: large;
+    font-weight: 490;
+   
+}
+.madrasaInfo p {
+    color: black;
+    font-size: large;
+    padding: 7px;
+    background-color: rgba(247, 239, 239, 0.5); 
+    width: 390px;
+    height: 90px;
+    border-radius: 16px 9px;
+    margin: 10px;
+    border: 2px solid black;
+}
+.madrasaButton {
+    background-color: #ffa500;
+    margin-left: 60px;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 7px 10px;
+    color: black;
+    font-size: large;
+    width: 140px;
+}
+.madrasaFacility {
+    color: black;
+    padding: 7px;
+    background-color: rgba(247, 239, 239, 0.5); /* Adjust the alpha value (0.7) for transparency */
+    width: 290px;
+    height: 90px;
+    border-radius: 16px 9px;
+    margin-left: 350px;
+    font-size: large;
+    border: 2px solid black;
+    margin-top: 7px;
+}
+
+.madrasaCaptions{
+    font-size: large;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 190px;
+    background-color: rgba(247, 239, 239, 0.5);
+    color: rgb(228, 3, 3);
+    padding: 7px;
+    border-radius: 16px 9px;
+    border: 2px solid black;
+    margin-left: 155px;
+    margin-bottom: 100px;
+}
+
+#madrasaSearchButton {
+    color: red;
+    font-weight:600;
+
+}
+.madrasaButtonTwo{
+    background-color: #ffa500;
+    /* margin-left: 60px; */
+    margin: 5px;
+    padding: 7px;
+    border-radius: 7px 10px;
+    color: black;
+    font-size: large;
+    width: 130px;
+}
+
+.madrasaTransition {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .madrasaTransition:hover {
+    transform: translateX(30px) scale(1.1);
+    color: #073a5d; 
+  }
+  
+
+  .madrasaTextMargin{
+    transition: all 0.3s ease-in-out;
+
+  }
+
+  .madrasaTextMargin:hover{
+    transform: translateX(30px) scale(1.1);
+    color: #073a5d; 
+  }
+
+
+.madrasaFacility{
+    transition: all 0.3s ease-in-out;
+
+}
+
+.madrasaFacility:hover{
+    transform: translateX(30px) scale(1.1);
+    color: #073a5d; 
+  }
+
+
+  #PrincipleImage{
+    width: 100%;
+  }
+
+  .principleMessege{
+    margin-top: 20px;
+  
+
+  }
+
+
+
+  .col-lg-4.messageRowsOne {
+    transition: all 3s ease-in-out; 
+    transform: translateX(10px) scale(.9);
+    padding: 30px; 
+}
+
+.col-lg-4.messageRowsOne:hover {
+    border-width: 8px 2px; 
+    border-style: solid; 
+    border-color: rgb(235, 238, 245); 
+    box-shadow: 15px 12px 9px 8px #928f94;
+    box-shadow:  160px rgba(255, 255, 255, 0.8); 
+    border-radius: 13px 9px;
+}
+
+
+  .PrincipleImageDiv{
+    margin: 22px;
+    padding: 12px;
+  }
+
+.messageRowsTwo:hover {
+    border: 2px solid rgb(243, 234, 234);
+    box-shadow: 15px 12px 9px 8px #928f94;
+    box-shadow:  160px rgba(255, 255, 255, 0.8); 
+    border-radius: 13px 9px;
+
+}
+
+.messageRowsTwo{
+    transition: all 5s ease-in-out; 
+    transform: translateX(10px) scale(.9);
+    padding: 30px; 
+}
+.name{
+    margin-top: 30px;
+}
+
+#messageBari {
+    color: #073a5d;
+    margin-top: 20px;
+    padding: 25px;
+    font-weight:600;
+
+}
+.name p {
+    font-weight:550;
+}
+.nameTwo p {
+    margin-top: 20px;
+    padding: 15px;
+    color:#e1b909;
+    font-weight: 510;
+}
+
+
+
+
+.authorDiv img {
+    width: 100%;
+    margin-top: 20px;
+    /* padding-top: 2px; */
+    border: 2px solid rgb(243, 234, 234);
+    box-shadow: 12px 9px 6px 4px #97919a, 0 0 95px rgba(255, 255, 255, 0.8);
+    border-radius: 15px 11px;
+    transition: all 3s ease-in-out; 
+    transform: translateX(10px) scale(.9);
+    padding: 30px; 
+  }
+  
+  .authorImage:hover {
+      border-width: 8px 2px; 
+    border-style: solid; 
+    border-color: rgb(235, 238, 245); 
+    box-shadow: 15px 12px 9px 8px #928f94;
+    box-shadow:  160px rgba(255, 255, 255, 0.8); 
+    border-radius: 13px 9px;
+  }
+  
+  .authorClassesName {
+    color: #073a5d;
+    margin-top: 15px;
+    padding: 20px;
+    font-weight: 510;
+  }
+  
+
+
+
+
+
+
+
+
+  
+  
