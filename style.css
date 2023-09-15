@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
   }
 
-  /* @keyframes move{
+   @keyframes move{
     50%{
         translate: 0px 15px;
     }
@@ -15,13 +15,13 @@ html {
     100% {
         transform: rotate(360deg);
     }
-} */
+} 
 
 #madrasa {
    border: 1px solid rgb(254, 250, 250) ;
    border-radius: 12px;
    border-width: 0px 1px 2px 1px;
-   /* background-color: rgb(241, 246, 251) */
+   
 }
 #madrasaLogo2 {
     width: 45px;
@@ -29,6 +29,15 @@ html {
 .madrasaNav {
     margin-left: 5px;
 }
+
+
+.carousel-image-opacity {
+    opacity: 0.9; 
+    background-color: rgb(9, 10, 9);
+
+}
+
+
 
 
 #madrasaNavHover .dropdown-item:hover {
@@ -49,36 +58,47 @@ html {
 }
 .madrasaInfo p {
     color: black;
-    font-size: large;
-    padding: 7px;
+    font-size: medium;
+    padding: 5px;
     background-color: rgba(247, 239, 239, 0.5); 
-    width: 390px;
-    height: 90px;
+    width: auto;
+    height: 60px;
     border-radius: 16px 9px;
-    margin: 10px;
+    margin: 8px;
     border: 2px solid black;
 }
 .madrasaButton {
-    background-color: #ffa500;
+    background-color: #75f958;
+    color: #ffffff;
     margin-left: 60px;
     margin: 5px;
     padding: 7px;
     border-radius: 7px 10px;
-    color: black;
     font-size: large;
-    width: 140px;
+    width: 190px;
 }
+
+.madrasaButton:hover {
+    background-color: #ffd500; 
+    color: #073a5d; 
+}
+
+
+
+
+
+
 .madrasaFacility {
     color: black;
     padding: 7px;
-    background-color: rgba(247, 239, 239, 0.5); /* Adjust the alpha value (0.7) for transparency */
+    background-color: rgba(247, 239, 239, 0.5); 
     width: 290px;
     height: 90px;
     border-radius: 16px 9px;
-    margin-left: 350px;
+    margin-left: 550px;
     font-size: large;
     border: 2px solid black;
-    margin-top: 7px;
+    /* margin-top: 17px; */
 }
 
 .madrasaCaptions{
@@ -102,7 +122,6 @@ html {
 }
 .madrasaButtonTwo{
     background-color: #ffa500;
-    /* margin-left: 60px; */
     margin: 5px;
     padding: 7px;
     border-radius: 7px 10px;
@@ -111,9 +130,9 @@ html {
     width: 130px;
 }
 
-.madrasaTransition {
+/* .madrasaTransition {
     transition: all 0.3s ease-in-out;
-  }
+  } */
   
   .madrasaTransition:hover {
     transform: translateX(30px) scale(1.1);
@@ -156,7 +175,7 @@ html {
 
 
   .col-lg-4.messageRowsOne {
-    transition: all 3s ease-in-out; 
+    transition: all 1s ease-in-out; 
     transform: translateX(10px) scale(.9);
     padding: 30px; 
 }
@@ -185,7 +204,7 @@ html {
 }
 
 .messageRowsTwo{
-    transition: all 5s ease-in-out; 
+    transition: all 2s ease-in-out; 
     transform: translateX(10px) scale(.9);
     padding: 30px; 
 }
@@ -193,7 +212,7 @@ html {
     margin-top: 30px;
 }
 
-#messageBari {
+.messageBari {
     color: #073a5d;
     margin-top: 20px;
     padding: 25px;
@@ -206,7 +225,7 @@ html {
 .nameTwo p {
     margin-top: 20px;
     padding: 15px;
-    color:#e1b909;
+    color:#544e35;
     font-weight: 510;
 }
 
@@ -216,11 +235,10 @@ html {
 .authorDiv img {
     width: 100%;
     margin-top: 20px;
-    /* padding-top: 2px; */
     border: 2px solid rgb(243, 234, 234);
     box-shadow: 12px 9px 6px 4px #97919a, 0 0 95px rgba(255, 255, 255, 0.8);
     border-radius: 15px 11px;
-    transition: all 3s ease-in-out; 
+    transition: all 1s ease-in-out; 
     transform: translateX(10px) scale(.9);
     padding: 30px; 
   }
@@ -242,12 +260,412 @@ html {
   }
   
 
-
-
-
-
-
-
-
   
+  .kajiarchorMadrassaCaptionAll{
+    margin-top: 25px;
+    padding: 10px;
+    color:#075b92;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+  }
+
+  .lalluMama{
+    margin-top: 40px;
+  }
   
+  .kajiarchorMadrassaCaption h4::after {
+    content: "";
+    display: block;
+    width: 40px; 
+    height: 3px; 
+    background-color: rgba(255, 176, 48, 0.927);
+    margin-top: 20px; 
+    margin-left: 300px;
+  }
+
+  .chanMama{
+    margin-top: 20px;
+  }
+  
+
+
+  @media screen and (max-width: 768px) {
+    .kajiarchorMadrassaCaption h4::after {
+        margin-left: 135px; 
+    }
+}
+
+
+.backgroundImage {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 100px;
+     
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('Image/madrasa1heightcropfinal.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0.7; 
+        background-color:  rgba(0, 128, 0, 0.3);
+        z-index: -1; 
+        
+    }
+}
+
+
+    .count-section {
+        padding: 10px 15px;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .count-container {
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -80px;
+    }
+    
+    .counter-box {
+        width: 100%;
+        max-width: 300px;
+        border: 3px solid rgb(255, 251, 251);
+            box-shadow: 3px 3px;
+
+        margin: 10px;
+        padding: 10px;
+        border-radius: 500px 330px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fffdfd;
+    }
+    
+    .counter-box p {
+        color: rgb(5, 5, 55);
+        font-size: 18px;
+        font-weight: 400;
+        padding-left: 5px;
+    }
+    
+    .counter-box h2 {
+        height: auto;
+        text-align: center;
+        color: #ff4f01;
+        margin: 5px;
+        text-orientation: mixed;
+        background-color: rgb(255, 255, 255);
+        line-height: normal;
+    }
+    
+ 
+    @media (max-width: 768px) {
+        .counter-box {
+            max-width: 100%;
+        }
+    }
+
+    #madrasaImg{
+        width:100%;
+        
+    }
+
+
+    .welcome {
+        margin-top: 38px;
+        padding: 15px;
+    }
+
+
+.center {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
+.cardSpecial{
+    margin-bottom: 18px;
+    padding: 8px;
+}
+
+
+
+
+#historical-outline{
+    margin-top: -10px;
+}
+   
+.madrasaButtonss {
+    width: 500px;
+    background: linear-gradient(to right, #75f958, #2bc0e4); 
+    color: #40b406;
+    margin: 5px;
+    padding: 7px;
+    transition: background 0.5s ease, color 0.6s ease;
+    border-radius: 7px 10px;
+    font-size: large;
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    text-align: center;
+}
+
+
+
+.madrasaButtonss:hover {
+    background: linear-gradient(to right, #fed400, #f76d57); 
+    color: #073a5d;
+}
+
+    #buttonColor{
+        color: white;
+        font-size: large;
+        width: auto;
+    }
+
+
+/* .wow {
+    margin: 20px;
+    padding: 10px;
+    
+}   */
+
+.recentEventsOne {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border: 3px solid rgb(180, 241, 114);
+    box-shadow: 10px 20px 25px  rgba(100, 98, 98, 0.5); 
+    border-radius: 20px 13px;
+    
+
+}
+.colom2{
+    margin-left: 160px;
+}
+
+.rowPadding{
+    margin-bottom: 10px;
+}
+
+ /* .justifyCon{
+    margin-left:auto;
+}  */
+
+
+
+
+
+
+.madrasaButtonssCard {
+    width: 180px;
+    background: linear-gradient(to right, #75f958, #2bc0e4); 
+    color: #40b406;
+    margin: 5px;
+    padding: 7px;
+    transition: background 0.5s ease, color 0.6s ease;
+    border-radius: 7px 10px;
+    font-size: large;
+    background-clip: text; 
+    -webkit-background-clip: text; 
+}
+
+.madrasaButtonssCard:hover {
+    background: linear-gradient(to right, #fed400, #f76d57); 
+    color: #073a5d;
+}
+
+
+
+
+
+
+/*-- student notice board --*/
+
+.notice-container { box-sizing: border-box; margin: auto; max-width: 90%; width: 1100px; }
+
+.notice-area { margin: auto; max-width: 500px; padding: 50px 4px; }
+
+.notice-heading {
+  padding: 3.5px;
+  background: linear-gradient(145deg,cyan 15%,#9600ff 90%);
+  height: 60px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.line span { position:relative; }
+.line span:before {
+  content:"";
+  position:absolute;
+  top: 100%;
+  width:105%;
+  height:2.5px;
+  border-radius:10px;
+  background:linear-gradient(145deg, transparent, #9600ff 20%,cyan 80%,transparent);
+}
+
+.notice-heading h4{
+  text-align: center;
+  color: #f9f9f9;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
+}
+
+.first-box, .second-box, .third-box{
+  margin: 0px 10px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 0px 20px 25px -10px rgba(0, 0, 0,.5); 
+}
+
+.third-box {
+  margin: 0px 10px;
+  height: 500px;
+  background: #fff;
+  padding-left: 5px;
+  overflow: hidden;
+}
+
+.third-box marquee { height: 500px; }
+
+.alert-box {
+  width:90%;
+  margin:20px auto;
+  padding: 5px 10px;
+  position:relative;
+  background-color: #f5f5f5;
+  border-radius:5px;
+  box-shadow:10px 5px 5px 0px #ccc;
+}
+.alert-box  a { 
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  line-height: 30px;
+  white-space: pre-wrap;
+}
+
+.simple-alert { border-left:5px solid #f93; transition: transform 0.3s ease-out; }
+.simple-alert:hover { transform: translate(0, 5px); }
+
+fieldset { border:0; }
+legend { font-size: 12px; padding: 0px 5px; color: white; background: red; border-radius: 10px; }
+
+@keyframes flash {
+  0%, 50%, 100% {opacity: 1;}
+  25%, 75% {opacity: 0;}
+}
+.flash {
+  animation-name: flash;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+.upcoming-event-section { box-sizing: border-box; margin: auto; width: 380px; background: #f5f5f5; height: 420px;
+    border: 2px solid; border-image-slice: 1; border-image-source: linear-gradient(145deg, pink, #9600ff 20%,cyan 80%,transparent); }
+
+.event-header { text-align: center; margin: 20px 0px 10px; padding-bottom: 10px; position: relative; }
+
+.event-header h3 { font-size: 22px; font-weight: 400; line-height: 40px; margin-bottom: 0px; }
+.event-header .event-line { background-color: #ddd; position: absolute; width: 380px; right: 0; height: 2px; }
+
+.event-body { margin: 0px; padding: 0px; }
+
+.event-box { border:1px solid #ddd; box-sizing: border-box; margin: 0px; overflow: hidden; padding: 10px 15px 25px; transition: transform 0.3s ease-out; }
+.event-box:hover { transform: translate(0, 10px); }
+
+.time-from { border: 1px solid #f93; box-sizing: border-box; color: #f93; float: left; margin: 0px; text-align: center; width: 48px; }
+.date { font-size: 24px; font-weight: 700; line-height: 25px; margin: 15px 0px 0px; }
+
+.event-wrapper { box-sizing: border-box; float: right; position: relative; width: calc(100% - 66px); }
+.event-wrapper h5 { font-size: 18px; margin: 10px 0px; }
+a { color: #333333; text-decoration-line: none; }
+
+.time { font-size: 13px; font-weight: 700; text-transform: uppercase; display: inline-block; margin-left: 20px; }
+
+
+/* #notice {
+    color: red;
+} */
+.noticediv{
+    text-align: center;
+}
+
+.noticediv h1 {
+    color: red;
+}
+
+.imgWid {
+    width: 400px;
+}
+.kholaJanala{
+    text-align: center;
+}
+
+.madrasaButtonssPublic  {
+    width: 100px;
+    background: linear-gradient(to right, #75f958, #2bc0e4); 
+    color: #40b406;
+    margin: 5px;
+    padding: 7px;
+    transition: background 0.5s ease, color 0.6s ease;
+    border-radius: 7px 10px;
+    font-size: large;
+    background-clip: text; 
+    -webkit-background-clip: text; 
+}
+
+.madrasaButtonssPublic:hover {
+    background: linear-gradient(to right, #ff3902, #f76d57); 
+    color: #073a5d;
+}
+
+   
+
+
+.cardMarge {
+    margin: 15px;
+    padding: 10px;
+   
+}
+
+.ourCourses {
+    text-align: center;
+   
+}
+
+
+#academicsprograms{
+    border-radius: 20px 12px;
+} 
+
+
+.holeDiv{
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+#head{
+    text-align: center;
+}
+#authorId{
+    text-align: center;
+}
+
+
+
+#bgmOne{
+    background-color: rgb(250, 250, 153);
+}
