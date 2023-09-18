@@ -18,9 +18,9 @@ html {
 } 
 
 #madrasa {
-   border: 1px solid rgb(254, 250, 250) ;
-   border-radius: 12px;
-   border-width: 0px 1px 2px 1px;
+   border: 1px solid rgb(203, 201, 201) ;
+   border-radius: 5px;
+   border-width: 0px 1px 0px 1px;
    
 }
 #madrasaLogo2 {
@@ -32,16 +32,24 @@ html {
 
 
 .carousel-image-opacity {
-    opacity: 0.9; 
-    background-color: rgb(9, 10, 9);
+     opacity: 0.8; 
+    background-color: lightgreen( #000000c9, #71f0d1b5);
+    color: white;
+    
 
 }
+
+ 
+  .navItemMarge {
+    margin-left: 50px;
+
+ }  
 
 
 
 
 #madrasaNavHover .dropdown-item:hover {
-    background-color: #9b8d8d; 
+    background-color: #7a7979; 
     color: #ffd102; 
   }
 
@@ -50,20 +58,28 @@ html {
         max-height: auto; 
   } 
 
+  .usingJs {
+    
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
 #madrasaNavItem {
-    color: rgb(99, 4, 85);
-    font-size: large;
-    font-weight: 490;
+    color: #073a5d;
+    font-size: 17px;
+    font-weight: bolder;
    
 }
+
+
 .madrasaInfo p {
     color: black;
     font-size: medium;
     padding: 5px;
     background-color: rgba(247, 239, 239, 0.5); 
     width: auto;
-    height: 60px;
-    border-radius: 16px 9px;
+    height: 50px;
+    border-radius: 90px;
     margin: 8px;
     border: 2px solid black;
 }
@@ -94,11 +110,11 @@ html {
     background-color: rgba(247, 239, 239, 0.5); 
     width: 290px;
     height: 90px;
-    border-radius: 16px 9px;
+    border-radius: 90px ;
     margin-left: 550px;
     font-size: large;
     border: 2px solid black;
-    /* margin-top: 17px; */
+    
 }
 
 .madrasaCaptions{
@@ -120,19 +136,29 @@ html {
     font-weight:600;
 
 }
-.madrasaButtonTwo{
-    background-color: #ffa500;
-    margin: 5px;
-    padding: 7px;
-    border-radius: 7px 10px;
-    color: black;
-    font-size: large;
-    width: 130px;
-}
 
-/* .madrasaTransition {
-    transition: all 0.3s ease-in-out;
-  } */
+
+
+
+
+
+  .madrasaButtonTwo {
+    background-color: #9689f8; 
+    border: 1px solid black;
+    color: white; 
+    font-weight:580;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    margin-right: 120px;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+   
+  }
+  
+  .madrasaButtonTwo:hover {
+    background-color: #ff7f00; 
+  }
+   
   
   .madrasaTransition:hover {
     transform: translateX(30px) scale(1.1);
@@ -162,12 +188,18 @@ html {
   }
 
 
-  #PrincipleImage{
-    width: 100%;
-  }
+   #PrincipleImage{
+    width: 50%;
+    margin-left: 50px;
+   
+  } 
 
+
+
+  
   .principleMessege{
-    margin-top: 20px;
+    margin-top: 18px;
+    
   
 
   }
@@ -175,19 +207,21 @@ html {
 
 
   .col-lg-4.messageRowsOne {
-    transition: all 1s ease-in-out; 
-    transform: translateX(10px) scale(.9);
-    padding: 30px; 
+    transition: all 0.5s ease-in-out; 
+    transform: translateX(1px) scale(.9);
+    padding: 20px; 
 }
 
 .col-lg-4.messageRowsOne:hover {
     border-width: 8px 2px; 
     border-style: solid; 
-    border-color: rgb(235, 238, 245); 
-    box-shadow: 15px 12px 9px 8px #928f94;
-    box-shadow:  160px rgba(255, 255, 255, 0.8); 
+    border-color: rgb(242, 245, 254); 
+    box-shadow: 0px 13px 1px 2px #e7e6e6;
     border-radius: 13px 9px;
+   
 }
+
+
 
 
   .PrincipleImageDiv{
@@ -196,24 +230,29 @@ html {
   }
 
 .messageRowsTwo:hover {
-    border: 2px solid rgb(243, 234, 234);
-    box-shadow: 15px 12px 9px 8px #928f94;
-    box-shadow:  160px rgba(255, 255, 255, 0.8); 
+   
+
+    border-width: 8px 2px; 
+    border-style: solid; 
+    border-color: rgb(242, 245, 254); 
+    box-shadow: 0px 13px 1px 2px #e7e6e6;
     border-radius: 13px 9px;
 
 }
 
 .messageRowsTwo{
-    transition: all 2s ease-in-out; 
+    transition: all 1s ease-in-out; 
     transform: translateX(10px) scale(.9);
     padding: 30px; 
+
 }
 .name{
     margin-top: 30px;
+    margin-left: 26px;
 }
 
 .messageBari {
-    color: #073a5d;
+    color: rgb(4, 4, 124);
     margin-top: 20px;
     padding: 25px;
     font-weight:600;
@@ -223,35 +262,42 @@ html {
     font-weight:550;
 }
 .nameTwo p {
-    margin-top: 20px;
-    padding: 15px;
-    color:#544e35;
+    margin-top: 14px;
+    padding: 6px;
+    color:#22211c;
     font-weight: 510;
 }
 
 
 
 
+r */
+
+
+
+
 .authorDiv img {
-    width: 100%;
-    margin-top: 20px;
+    width: 75%;
+    margin-top: 10px;
     border: 2px solid rgb(243, 234, 234);
-    box-shadow: 12px 9px 6px 4px #97919a, 0 0 95px rgba(255, 255, 255, 0.8);
     border-radius: 15px 11px;
     transition: all 1s ease-in-out; 
     transform: translateX(10px) scale(.9);
-    padding: 30px; 
+    padding: 0px; 
+
   }
   
   .authorImage:hover {
       border-width: 8px 2px; 
     border-style: solid; 
-    border-color: rgb(235, 238, 245); 
-    box-shadow: 15px 12px 9px 8px #928f94;
-    box-shadow:  160px rgba(255, 255, 255, 0.8); 
+    border-color: rgb(242, 245, 254); 
+    box-shadow: 0px 13px 1px 2px #e7e6e6;
     border-radius: 13px 9px;
   }
   
+  
+
+
   .authorClassesName {
     color: #073a5d;
     margin-top: 15px;
@@ -265,7 +311,8 @@ html {
     margin-top: 25px;
     padding: 10px;
     color:#075b92;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
 
   }
 
@@ -388,17 +435,35 @@ html {
     }
 
 
+
+    .col-md-6 {
+        position: relative;
+        left: -100%; 
+        opacity: 0;
+        transition: left 2s ease, opacity 0.5s ease;
+      }
+      
+      .right-column {
+        left: 100%; 
+      }
+      
+      .slide-in {
+        left: 0;
+        opacity: 1;
+      }
+      
+
 .center {
     text-align: center;
     margin-bottom: 25px;
     padding: 5px;
 }
 
-.cardSpecial{
-    margin-bottom: 18px;
-    padding: 8px;
+ .cardSpecial{
+    margin-bottom: 20px;
+    padding: 10px;
 }
-
+ 
 
 
 
@@ -406,26 +471,29 @@ html {
     margin-top: -10px;
 }
    
+
+
 .madrasaButtonss {
-    width: 500px;
-    background: linear-gradient(to right, #75f958, #2bc0e4); 
-    color: #40b406;
-    margin: 5px;
-    padding: 7px;
-    transition: background 0.5s ease, color 0.6s ease;
-    border-radius: 7px 10px;
-    font-size: large;
-    background-clip: text; 
-    -webkit-background-clip: text; 
-    text-align: center;
-}
+            width: 500px;
+            background: linear-gradient(to right, #75f958, #2bc0e4);
+            color: #40b406;
+            margin: 5px;
+            padding: 7px;
+            border-radius: 7px 10px;
+            font-size: large;
+            background-clip: text;
+            -webkit-background-clip: text;
+            text-align: center;
+            border: 1px solid black;
+            background-size: 200% 100%;
+        }
 
 
 
-.madrasaButtonss:hover {
-    background: linear-gradient(to right, #fed400, #f76d57); 
-    color: #073a5d;
-}
+
+
+
+
 
     #buttonColor{
         color: white;
@@ -434,11 +502,7 @@ html {
     }
 
 
-/* .wow {
-    margin: 20px;
-    padding: 10px;
-    
-}   */
+
 
 .recentEventsOne {
     margin-top: 50px;
@@ -457,14 +521,6 @@ html {
     margin-bottom: 10px;
 }
 
- /* .justifyCon{
-    margin-left:auto;
-}  */
-
-
-
-
-
 
 .madrasaButtonssCard {
     width: 180px;
@@ -478,6 +534,57 @@ html {
     background-clip: text; 
     -webkit-background-clip: text; 
 }
+
+.plsVinchiDaa{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.meetOurAuthority {
+    width: auto;
+    background: linear-gradient(to right, #ffffff, rgb(255, 128, 1));
+    color: rgb(4, 4, 65);
+    margin: 15px;
+    padding: 12px;
+    border-radius: 77px;
+    font-size: large;
+    text-align: center;
+    border: 1px solid black;
+    background-size: 200% 100%;
+    transition: background-position 1s ease;
+    font-weight: 580;
+   
+}
+
+.meetOurAuthority:hover {
+    background-position: -100% 0;
+}
+
+
+
+
+.meetOurAuthority2 {
+    width: auto;
+     background: linear-gradient(to right, #ffffff, rgb(255, 128, 1));
+     color: rgb(3, 3, 62);
+     margin: 10px;
+     padding: 9px;
+     border-radius: 77px;
+     font-size: large;
+     text-align: center;
+     border: 1px solid black;
+     background-size: 200% 100%;
+     transition: background-position 1s ease;
+     font-weight: 560;
+ }
+ 
+ .meetOurAuthority2:hover {
+     background-position: -100% 0;
+ }
+ 
+
 
 .madrasaButtonssCard:hover {
     background: linear-gradient(to right, #fed400, #f76d57); 
@@ -553,6 +660,12 @@ html {
   white-space: pre-wrap;
 }
 
+
+
+
+
+/* uhjkasjknakjsn */
+
 .simple-alert { border-left:5px solid #f93; transition: transform 0.3s ease-out; }
 .simple-alert:hover { transform: translate(0, 5px); }
 
@@ -596,9 +709,34 @@ a { color: #333333; text-decoration-line: none; }
 .time { font-size: 13px; font-weight: 700; text-transform: uppercase; display: inline-block; margin-left: 20px; }
 
 
-/* #notice {
-    color: red;
-} */
+
+/* CSS for responsive header */
+.responsive-menu {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header .navbar {
+      display: none;
+    }
+  
+    .responsive-menu {
+      display: block;
+      text-align: center;
+    }
+  
+    .responsive-menu .navbar {
+      display: none;
+    }
+  
+    
+  
+    .responsive-menu .navbar a {
+      padding: 10px;
+    }
+  }
+  
+
 .noticediv{
     text-align: center;
 }
@@ -633,8 +771,6 @@ a { color: #333333; text-decoration-line: none; }
 }
 
    
-
-
 .cardMarge {
     margin: 15px;
     padding: 10px;
@@ -668,4 +804,115 @@ a { color: #333333; text-decoration-line: none; }
 
 #bgmOne{
     background-color: rgb(250, 250, 153);
+}
+
+
+/* Reset default margin and padding for body and ul elements */
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  footer {
+    background-color: #333; 
+    color: #fff;/
+    padding: 30px 0; 
+  }
+  
+
+  footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer ul li a {
+    color: #fff; 
+    text-decoration: none;
+    transition: color 0.3s; 
+  }
+  
+  footer ul li a:hover {
+    color: #ffd700; 
+  }
+  
+  /* Style the address in the contact column */
+  footer address {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+
+  footer .social-icons {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  footer .social-icons li a {
+    color: #fff; 
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+
+  @media (max-width: 767px) {
+    footer {
+      text-align: center; 
+    }
+    .col-md-3 {
+      margin-bottom: 30px;
+    }
+  }
+.fudaa{
+    margin-top: 30px;
+    border-radius: 15px;
+    border: 1px solid snow;
+}  
+
+.festivals {
+  background-color: rgb(3, 3, 96);
+  color: white;
+  font-size: large;
+  border: 2px solid orange;
+ 
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.topPad {
+ margin-top: 40px;
+}
+
+.stafPicMaage{
+  width: 100px;
+}
+
+.qustion{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+.alert-info{
+  margin-top: 35px;
+
+
+}
+
+.halaikoice {
+  font-weight: bolder;
 }
